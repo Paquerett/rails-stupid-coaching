@@ -1,5 +1,10 @@
-<p>Ask page</p>
-<form action="/answer" method="get" data-turbo="false">
-  <input type="text" name="question" placeholder="Ask your coach" value="<%= @questions %>"
-  <input type="submit" value="Ask!">
-</form>
+<p>Ask your coach anything:</p>
+<nav class="navbar">
+    <div class="input-group">
+      <form action="/answer" method="get" data-turbo="false">
+        <input type="text" class="form-control" name="question" value="<%= params[:question] %>"
+        <input type="submit" class="container-fluid" value="Ask!">
+        <input button class="btn btn-primary" type="submit" value="Ask!"></button>
+      </form>
+    </div>
+</nav>

@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+ .navbar .container-fluid .input-group {
+  border-radius: 5px;
+ }
+
+ .return {
+  text-decoration: none;
+ }

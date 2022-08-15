@@ -1,2 +1,6 @@
-<p>Answer page</p>
-<h2><%=@questions%></h2>
+<p><%=params[:question]%></p>
+<h3><%=- @answer%></h3>
+
+<div class="return">
+<%= link_to "Ask a new question", root_path %>
+</div>
